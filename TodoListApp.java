@@ -64,7 +64,7 @@ class TodoList {
 
 public class TodoListApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner ob = new Scanner(System.in);
         TodoList todoList = new TodoList();
 
         while (true) {
@@ -75,18 +75,17 @@ public class TodoListApp {
             System.out.println("4. Exit");
 
             System.out.print("Enter your choice (1-4): ");
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
-
+            int choice = ob.nextInt();
+            ob.nextLine(); 
             switch (choice) {
                 case 1:
                     System.out.print("Enter task description: ");
-                    String description = scanner.nextLine();
+                    String description = ob.nextLine();
                     todoList.addTask(description);
                     break;
                 case 2:
                     System.out.print("Enter task index to mark as done: ");
-                    int index = scanner.nextInt();
+                    int index = ob.nextInt();
                     todoList.markTaskAsDone(index - 1);
                     break;
                 case 3:
