@@ -1,3 +1,4 @@
+/*This code is for a To DO List and with this the userrs can store their works and can even mark them done.*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
