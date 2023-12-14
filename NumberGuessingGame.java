@@ -1,3 +1,6 @@
+/*The following code is a  number guessing game. In this the machine will have a number and the player have to guess what the number is. Depending on what number the user has chose the machine will tell if the number the player has chose is lower or higher to the
+number to be guessed*/ 
+
 import java.util.Scanner;
 import java.util.Random;
 
